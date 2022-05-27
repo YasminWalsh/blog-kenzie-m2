@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* login/register */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(193, 193, 246);
+    align-items: center;
+    
+}
+
+#form{
+    margin-top: 25vh;
+    background-color: rgb(210, 145, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25vw; 
+    height: 50vh;
+
+    border-radius: 20%;
+    box-shadow:0 0 1em gold;
+}
+
+#form h2{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(105, 55, 243);
+}
+
+#form input{
+    border: 2px solid rgb(175, 176, 247);
+    border-radius: 10px;
+    height:5vh;
+    text-align:center;
+    font-family: Poppins;
+    font-size: small;
+}
+
+#form button{
+    background-color: rgb(105, 55, 243);
+    color: white;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 10px;
+    height:5vh;
+    text-align:center;
+    font-family: Poppins;
+    font-size: smaller;
+    cursor: pointer;    
+}
+
+#form button:hover{
+    color:rgb(105, 55, 243) ;
+    background-color: gold
+}
+
+#form p{
+    font-family: Poppins;
+    font-size: smaller;
+}
+
+#form p>a{
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: small;
+    color: rgb(6, 6, 184);
+}
+
+/* blog */
+#infosUsuario{
+    height: 7vh;
+    background-color: rgb(210, 145, 229);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+#boxInfoHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#avatarImg{
+    width: 3vw;
+    height: 6vh;
+
+    border-radius: 50%;
+}
+
+#userNameHeader{
+    margin-left: 1vw;
+    font-family: Poppins;
+    color: white;
+    font-weight: bold;
+}
+
+#botaoSair{
+    margin-right: 5vw;
+    background-color: gold;
+    font-family: Poppins;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#botaoSair:hover{
+    background-color: black;
+    color: gold;
+}
+
+/* criando post */
+#criarPost{
+    margin-top: 1%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+#criarPost>textarea{
+    resize: none;
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    width: 60%;
+    height: 15vh;
+    
+    font-family: Poppins;
+}
+
+#criarPost>button{
+    margin-left: 2px;
+    background-color: rgb(255, 243, 177);
+    border:solid 2px rgb(175, 172, 172) ;
+    font-family: Poppins;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#criarPost>button:hover{
+    background-color: rgb(190, 190, 190);
+    border:solid 2px rgb(243, 255, 200) ;
+    
+}
+
+/* listando post */
+#postsApi{
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    align-items: center;
+    
+}
+.boxPost{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 15vh;
+    
+    background-color: rgb(248, 236, 167);
+
+}
+#boxUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;;
+}
+
+#boxUsuario>img{
+    width: 5vw;
+    height: 10vh;
+
+    border-radius: 100%;
+}
+
+#boxUsuario>span{
+    color: black;
+    font-family: Poppins;
+    font-size: 10px;
+    width: 50%;
+    font-weight: bold;
+}
+
+#campoPost{
+    color: white;
+    font-family: Poppins;
+    font-size: 15px;
+    text-align:left;
+    line-height: 5vh;
+    overflow-y: scroll;
+    
+
+    background-color: rgb(232, 142, 252);
+    border-radius: 5px;
+    width: 50vw;
+    height: 10vh;
+    left: 5px;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 5%;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#boxBotoesPost{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    justify-content: flex-end;
+  
+    
+}
+
+.botoesPost{
+    text-align: center;
+    width: 60px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline blue;
+    font-size: 10px;
+    height: 18px;
+
+    font-family: Poppins;
+    
+
+}
+
+
+/* modal modelo */
+.modalContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer.mostrar{
+    display: flex;
+}
+
+.modal{
+   background-color: rgb(255, 252, 203);
+   width: 40%;
+   min-width: 300px;
+   border: 2px solid gold;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+}
+
+.fecharModal{
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+.tituloModal{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(105, 55, 243);
+}
+
+.inputModal{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: 1px solid gold;
+    font-family: Poppins;
+    height: 5vh;
+}
+
+.botaoModal{
+    background-color: rgb(105, 55, 243);
+    color: white;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 10px;
+    height:5vh;
+    text-align:center;
+    font-family: Poppins;
+    font-size: smaller;
+    cursor: pointer;  
+}

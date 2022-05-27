@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header id="infosUsuario">
+        
+    </header>
+    <div id="criarPost">
+        <!-- posts do Usuario -->
+    </div>
+    <ul id="postsApi">
+        <!-- posts da API -->
+    </ul>
+    <footer>
+        <button id="botaoPagAnterior">Anterior</button>
+        <span id="pagAtual"></span>
+        <button id="botaoPagPosterior">Próxima</button>
+    </footer>
+
+
+    <!-- Inserir com o DOM e MELHORAR layout -->
+    <div class="modalContainer">
+        <div class="modal">
+            <button class="fecharModal">x</button>
+            <h3 class="tituloModal">Editar Post</h3>
+            <form>
+                <input class="inputModal"type="text" id="inputEditar" placeholder="Escreva aqui seu post">
+                <button class="botaoModal" id="Editar" onclick="return false">Editar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Inserir com DOM - Excluir -->
+    <div class="modalContainer">
+        <div class="modal">
+            <button class="fecharModal">x</button>
+            <h3 class="tituloModal"> Tem certeza que deseja excluir este post? </h3>
+            <form>
+                <button class="botaoModal" id="Confirma" onclick="return false">Sim</button>
+                <button class="botaoModal" id="Nega" onclick="return false">Não</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script type="module" src="../js/pages/blog.js"></script>
+</html>

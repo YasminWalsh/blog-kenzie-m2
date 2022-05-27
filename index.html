@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>m2-entrega-blog-m2</title>
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <form id="form" action="#">
+      <h2>Cadastro</h2>
+      <input class="field" type="text" placeholder="Nome de usuário" name="username"> <!-- até 12 dígitos -->
+      <input class="field" type="email" placeholder="Email" name="email">
+      <input class="field" type="url" placeholder="URL imagem do avatar" name="avatarUrl">
+      <input class="field" type="password" placeholder="Senha" name="password">
+     
+      <button id="botaoCadastro" onclick="return false">Cadastrar</button>
+      <p id="messagemErro"></p>
+      <p>Já possui cadastro?<a href="./src/pages/login.html">Login</a></p>
+    </form>
+    
+
+    <script type="module" src="./src/js/pages/cadastro.js"></script>
+</body>
+</html>
